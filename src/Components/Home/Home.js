@@ -32,7 +32,7 @@ const Home = () => {
     
    
            <div className="home-destination">
-           <div >
+           <div className="text-align-center">
                 <h1>COX'S BAZAR</h1>
                 <p>Cox's Bazar is a city, fishing port, tourism centre and</p>
                 <p>district headquarter in southern Bangladesh. It is famous</p>
