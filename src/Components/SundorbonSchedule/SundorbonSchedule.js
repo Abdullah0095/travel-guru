@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Button } from 'react-bootstrap';
 import './SundorbonSchedule.css';
 
 const SundorbonSchedule = () => {
+    const [startDate, setStartDate] = useState(new Date());
 
     return (
         <div className="booking-page-style">
@@ -18,27 +19,7 @@ const SundorbonSchedule = () => {
             </div>
             
             <div className="half-details">
-            <form>
-                <label>
-                    origin:
-                    <br/>
-                    <input type="text" name=""/>
-                    <br/>
-                    Destination
-                    <br/>
-                    <input type="text" name=""/>
-                    <br/>
-                    From
-                    <br/>
-                    <input type="text"/>
-                    <br/>
-                    To
-                    <br/>
-                    <input type="text"/>
-                    <br/>
-                    <Button variant="warning">Booking now</Button>
-                </label>    
-            </form>
+            
             </div>
             
         </div>

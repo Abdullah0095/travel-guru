@@ -1,18 +1,10 @@
-.background{
-    
-    /* background-image: url(https://i.ibb.co/yqHy0KG/Rectangle-1.png); */
-    
-    /* background-repeat: no-repeat; */
-     background-color: rgb(40, 121, 158);
-     
-     
-     
-}
-.home-destination{
-    display: flex;
+.topic-details{
+    float: left;
+    margin: 80px 0px;
+    margin-left: 40px;
     
 }
-.navigation{
-    padding:40px;
-    text-align: right;
+.topic-details:hover{
+    color: teal;
+    
 }
