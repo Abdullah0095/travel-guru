@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../../photos/Logo.png'
+import logo from '../../photos/Logo.png';
 import { Link } from 'react-router-dom';
 import './Header.css';
 import { Button } from 'react-bootstrap';
@@ -13,10 +13,13 @@ const Header = () => {
       <nav className="nav">
           <ul >
               <li>
+                  <Link to="/home"> 
                   <img className="logo" src={logo} alt=""/>
+                  
+                  </Link>
               </li>
               <li>
-                  <input type="text" placeholder="search your destination"/>
+                  <input type="text" size="40" placeholder="search your destination"/>
               </li>
               <li>
                   <Link to="/home">News</Link>
@@ -36,9 +39,13 @@ const Header = () => {
                   </Link>
               </li>
           </ul>
+
+
       </nav>
+
+
       
-  </div>
+   </div>
     );
 };
 

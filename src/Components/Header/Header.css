@@ -1,17 +1,16 @@
-.header{
-    /* background-color: teal; */
-}
+
 .header .logo{
     height: 50px;
 }
 
 .nav{
-    margin-left: 150px;
+    margin-left: 100px;
     margin-top: 20px;
 }
 .nav li{
     display: inline;
     margin-left: 50px;
+    
     
   }
   

@@ -1,29 +1,77 @@
+import { TextField } from '@material-ui/core';
 import React, { useState } from 'react';
 import { Button } from 'react-bootstrap';
 import './SundorbonSchedule.css';
 
 const SundorbonSchedule = () => {
-    const [startDate, setStartDate] = useState(new Date());
+    
 
     return (
-        <div className="booking-page-style">
-            <div className="half-details">
-                <h1>COX'S BAZAR</h1>
-                <p>Cox's Bazar  is a city, fishing port, tourism centre and district</p>
-                 <p>headquarters in southeastern Bangladesh. It is famous mostly </p> 
-                 <p>for its long natural sandy beach, and it is infamous for the</p> 
-                 <p>largest refugee camp in the world. It is located 150 km (93 mi)</p> 
-                 <p>south of the divisional headquarter city of Chittagong.</p> 
-                 <p>Cox's Bazar is also known by the name Panowa, which translates</p> 
-                 <p> literally as "yellow flower". Another old name was "Palongkee".</p>
-            </div>
-            
-            <div className="half-details">
-            
-            </div>
+        <div style={{display: 'flex', margin: '60px',}}>
+        <div className="detail">
+            <h1>Sundorbon</h1>
+            <p>It is said the name Sreemangal (or Srimangal) is named after Sri Das and Mangal Das; .</p>
+            <p> two brothers who settled on the banks of the Hail Haor.[2] A copper plate</p>
+            <p>of Raja Marundanath from the 11th century was found in Kalapur. During an excavation </p>
+            <p> at Lamua, an ancient statue of Ananta Narayan was dug out </p>
+            <p>dense forest, and grassland hill tracks. Many small rivers flow through calculation </p>
+            <p>mountains among which the Kachalong and the Machalong are notable bangladesh</p>
             
         </div>
-    );
-};
+        <div className="booking-form">
+            <form action="">
+                origin
+                <br/>
+                <input type="text" value="Dhaka" size="43">
+                    
+                </input>
+                <br/>
+                Destination
+                <br/>
+                <input type="text" value="sundorbon" size="43"/>
+                <br/>
 
+                <div style={{display: 'flex'}}>
+                <div>
+                From
+                <br/>
+                <TextField
+                id="date"
+                label=""
+                type="date"
+                defaultValue="2020-02-20"
+                
+                InputLabelProps={{
+                shrink: true,
+                }}
+            />
+
+                </div>
+                 
+                <div>
+                To
+                <br/>
+                <TextField
+                id="date"
+                label=""
+                type="date"
+                defaultValue="2020-02-20"
+                
+                InputLabelProps={{
+                shrink: true,
+                }}
+            />
+            </div>
+        </div>
+                <br/>
+                <div style={{textAlign:'center'}}>
+                <Button  variant="warning">Start Booking</Button>
+                </div>
+            </form>
+        </div>
+           
+    </div>
+
+);
+};
 export default SundorbonSchedule;
