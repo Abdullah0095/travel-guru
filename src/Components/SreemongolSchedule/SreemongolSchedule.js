@@ -5,13 +5,14 @@ import { Button } from 'react-bootstrap';
 
 const SreemongolSchedule = () => {
     return (
-        <div style={{display: 'flex', margin: '60px',}}>
+        <div>
+            <div style={{display: 'flex', margin: '60px',}}>
         <div className="detail">
             <h1>Sajek Valley</h1>
             <p>It is said the name Sreemangal (or Srimangal) is named after Sri Das and Mangal Das; .</p>
             <p> two brothers who settled on the banks of the Hail Haor.[2] A copper plate</p>
             <p>of Raja Marundanath from the 11th century was found in Kalapur. During an excavation </p>
-            <p> at Lamua, an ancient statue of Ananta Narayan was dug out </p>
+            <p> at Lamua, an ancient statue of Ananta Narayan was dug out  of the box option</p>
             <p>dense forest, and grassland hill tracks. Many small rivers flow through calculation </p>
             <p>mountains among which the Kachalong and the Machalong are notable bangladesh</p>
             
@@ -69,6 +70,7 @@ const SreemongolSchedule = () => {
         </div>
            
     </div>
+        </div>
 
 );
 };

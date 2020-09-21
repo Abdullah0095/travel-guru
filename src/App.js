@@ -12,6 +12,7 @@ import SajekSchedule from './Components/SajekSchedule/SajekSchedule';
 import SreemongolSchedule from './Components/SreemongolSchedule/SreemongolSchedule';
 import SundorbonSchedule from './Components/SundorbonSchedule/SundorbonSchedule';
 import Header from './Components/Header/Header';
+import HotelSearch from './Components/HotelSearch/HotelSearch';
 
 function App() {
   return (
@@ -31,8 +32,11 @@ function App() {
           <Route path="/sreemongolschedule">
                 <SreemongolSchedule/>
           </Route>
-          <Route psth="/sundorbonschedule">
+          <Route path="/sundorbonschedule">
             <SundorbonSchedule/>
+          </Route>
+          <Route path="/hotelsearch">
+            <HotelSearch/>
           </Route>
           <Route path="*">
               <NoMatch/>
