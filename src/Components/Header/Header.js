@@ -3,6 +3,7 @@ import logo from '../../photos/Logo.png';
 import { Link } from 'react-router-dom';
 import './Header.css';
 import { Button } from 'react-bootstrap';
+import background from '../../photos/Image/Rectangle 1.png'
 
 const Header = () => {
     
@@ -40,8 +41,8 @@ const Header = () => {
               </li>
           </ul>
 
-
-      </nav>
+     </nav>
+     <img className="main-banner" src={background} alt=""/>
 
 
       

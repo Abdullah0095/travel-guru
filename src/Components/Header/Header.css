@@ -5,7 +5,7 @@
 
 .nav{
     margin-left: 100px;
-    margin-top: 20px;
+    margin-top: 50px;
 }
 .nav li{
     display: inline;
@@ -19,3 +19,12 @@
     color: black;
     font-weight: bold;
   }
+  .main-banner{
+    display: flex;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    background-size: cover;
+    max-width: 100%;
+    
+}

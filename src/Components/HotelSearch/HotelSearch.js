@@ -1,8 +1,11 @@
+import { Map } from 'google-maps-react';
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 
 
+
 const HotelSearch = () => {
+     
     return (
         <Container>
           <Row>
@@ -43,7 +46,11 @@ const HotelSearch = () => {
                     </div>
                 
               </Col>
-              <Col xs={6}>google location</Col>
+              <Col xs={6}>
+              
+              <Map></Map>
+
+              </Col>
           </Row>
         </Container>
     );
