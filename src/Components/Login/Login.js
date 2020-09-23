@@ -44,16 +44,46 @@ const Login = () => {
             
           });
     }
+    const handleBlur = (e) => {
+        console.log(e.target.name, e.target.value);
+        if(e.target.name === 'email'){
+            const isEmailValid = /\S+@\S+\.\S+/.test(e.target.value);
+            console.log(isEmailValid);
+        }
+        if(e.target.name === 'password'){
+            const isPasswordValid = e.target.value.length > 6;
+            const passwordHasNumber = /\d{1}/.test(e.target.value);
+            console.log(isPasswordValid && passwordHasNumber)
+        }
+    }
+    const handleSubmit = ()=> {
+
+    }
 
     return (
-        <div>
-            {   user.isSignedIn ? <button onClick={handleGoogleSignOut}>Sign out</button>:
-                <button onClick={handleGoogleSignIn}>Continue with google</button>
-                
-            }
-            {
-                user.isSignedIn && <p>WelCome, {user.name}</p>
-            }
+        <div style={{textAlign: 'center'}}>
+            {/* google login */}
+            <div>
+                {   user.isSignedIn ? <button onClick={handleGoogleSignOut}>Sign out</button>:
+                    <button onClick={handleGoogleSignIn}>Continue with google</button>
+                    
+                }
+                {
+                    user.isSignedIn && <p>WelCome, {user.name}</p>
+                }
+
+                {/* email login */}
+                <div>
+                    <h1>our own authentication</h1>
+                    <form onSubmit={handleSubmit}>
+                            <input style={{textAlign:'center'}} type="text" onBlur={handleBlur} name="email" placeholder="your email address" required/>
+                            <br/>
+                            <input style={{textAlign:'center'}} type="password" onBlur={handleBlur} name="password" placeholder="your password"required/>
+                            <br/>
+                            <input type="submit" value="Submit"/>
+                    </form>
+                </div>
+            </div>
         </div>
     );
 };
