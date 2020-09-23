@@ -13,6 +13,7 @@ import SreemongolSchedule from './Components/SreemongolSchedule/SreemongolSchedu
 import SundorbonSchedule from './Components/SundorbonSchedule/SundorbonSchedule';
 import Header from './Components/Header/Header';
 import HotelSearch from './Components/HotelSearch/HotelSearch';
+import Login from './Components/Login/Login';
 
 function App() {
   return (
@@ -37,6 +38,9 @@ function App() {
           </Route>
           <Route path="/hotelsearch">
             <HotelSearch/>
+          </Route>
+          <Route path="/login">
+            <Login/>
           </Route>
           <Route path="*">
               <NoMatch/>

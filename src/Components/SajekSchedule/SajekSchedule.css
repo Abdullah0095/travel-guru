@@ -1,7 +1,7 @@
 .booking-form{
     border: 2px solid gray;
     padding: 30px;
-    margin-left: 100px;
+    margin-left: 170px;
     box-shadow: 2px 2px 5px gray;
     background-color: rgb(212, 211, 212, .5);
     
@@ -9,7 +9,5 @@
 }
 .detail{
     background-color: rgb(202, 198, 198, .5);
-    text-align: center;
-    /* box-shadow: 2px 2px 5px gray; */
-    
+    text-align: center; 
 }

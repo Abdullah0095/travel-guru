@@ -7,7 +7,7 @@ const SajekSchedule = () => {
     
 
     return (
-        <div style={{display: 'flex', margin: '60px'}}>
+        <div style={{display: 'flex', margin: '80px'}}>
             <div className="detail">
                 <h1>Sajek Valley</h1>
                 <p>The name of Sajek Valley came from the Sajek River that originates .</p>
