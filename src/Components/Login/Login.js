@@ -64,8 +64,12 @@ const Login = () => {
         <div style={{textAlign: 'center'}}>
             {/* google login */}
             <div>
-                {   user.isSignedIn ? <button onClick={handleGoogleSignOut}>Sign out</button>:
-                    <button onClick={handleGoogleSignIn}>Continue with google</button>
+                
+                {   user.isSignedIn ? <button onClick={handleGoogleSignOut}>
+                    
+                    Sign out
+                    </button>:
+                    <button onClick={handleGoogleSignIn}><img src="https://i.ibb.co/Rj74nSj/google.png" alt="" width="18px"/>continue with google</button>
                     
                 }
                 {
