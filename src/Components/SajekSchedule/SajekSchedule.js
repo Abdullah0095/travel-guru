@@ -1,6 +1,7 @@
 import { TextField } from '@material-ui/core';
 import React from 'react';
 import { Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import './SajekSchedule.css';
 
 const SajekSchedule = () => {
@@ -64,7 +65,9 @@ const SajekSchedule = () => {
             </div>
                     <br/>
                     <div style={{textAlign:'center'}}>
+                    <Link to="/hotelsearch">
                     <Button  variant="warning">Start Booking</Button>
+                    </Link>
                     </div>
                 </form>
             </div>

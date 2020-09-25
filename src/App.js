@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { createContext, useState } from 'react';
 import './App.css';
 import {
   BrowserRouter as Router,
@@ -14,14 +14,15 @@ import SundorbonSchedule from './Components/SundorbonSchedule/SundorbonSchedule'
 import Header from './Components/Header/Header';
 import HotelSearch from './Components/HotelSearch/HotelSearch';
 import Login from './Components/Login/Login';
+import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
 
 
-
+export const UserContext = createContext()
 
 function App() {
-  
+  const [loggedInUser, setLoggedInUser] = useState({})
   return (
-      
+      <UserContext.Provider value={[loggedInUser,setLoggedInUser]}>
       <Router>
         <Header/>
         <Switch>
@@ -40,9 +41,9 @@ function App() {
           <Route path="/sundorbonschedule">
             <SundorbonSchedule/>
           </Route>
-          <Route path="/hotelsearch">
+          <PrivateRoute path="/hotelsearch">
             <HotelSearch/>
-          </Route>
+          </PrivateRoute>
           <Route path="/login">
             <Login/>
           </Route>
@@ -53,7 +54,7 @@ function App() {
           </Route>
         </Switch>
       </Router>
-      
+      </UserContext.Provider>
   );
 }
 

@@ -1,6 +1,7 @@
 import { TextField } from '@material-ui/core';
 import React, { useState } from 'react';
 import { Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import './SundorbonSchedule.css';
 
 const SundorbonSchedule = () => {
@@ -65,7 +66,9 @@ const SundorbonSchedule = () => {
         </div>
                 <br/>
                 <div style={{textAlign:'center'}}>
-                <Button  variant="warning">Start Booking</Button>
+                <Link to="/hotelsearch">
+                    <Button  variant="warning">Start Booking</Button>
+                    </Link>
                 </div>
             </form>
         </div>
