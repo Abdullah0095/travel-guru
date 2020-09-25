@@ -5,11 +5,14 @@ import './Header.css';
 import { Button } from 'react-bootstrap';
 import background from '../../photos/Image/Rectangle 1.png'
 
+
+
 const Header = () => {
     
     
     
     return (
+        
       <div  className="header">
       <nav className="nav">
           <ul >
@@ -35,9 +38,11 @@ const Header = () => {
                   <Link to="/login">Contact</Link>
               </li>
               <li>
-                  <Link to="/login">
-                  <Button variant="warning">Login</Button>
+                  
+                      <Link to="/login">
+                            <Button variant="warning">Login</Button>
                   </Link>
+                  
               </li>
           </ul>
 
@@ -47,6 +52,7 @@ const Header = () => {
 
       
    </div>
+   
     );
 };
 
